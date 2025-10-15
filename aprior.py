@@ -1,3 +1,52 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Title: Apriori-Based Association Rule Mining and Visualization
+Author: [Your Name]
+Affiliation: [Your Institution]
+Date: 2025-10-15
+Version: 1.0
+License: MIT License
+Contact: your.email@example.com
+
+Description:
+------------
+This script implements Apriori-based frequent itemset mining and association rule generation
+from transactional data stored in CSV format. It also provides multiple visualization 
+options including:
+  1. Top frequent itemsets bar plot
+  2. Association rules scatter plot (Support vs Confidence, node size = Lift)
+  3. Association rules network graph (node size = PageRank, edge width = Lift)
+
+Requirements:
+-------------
+- Python >= 3.8
+- pandas
+- mlxtend
+- matplotlib
+- seaborn
+- networkx (optional, for network graph)
+
+Usage:
+------
+1. Set INPUT_FILE_PATH to your CSV file containing transactional data.
+2. Set OUTPUT_DIR to the desired directory for results.
+3. Run the script:
+       python apriori_association_rules.py
+
+Citation:
+---------
+If you use this script in published work, please cite the associated research:
+[Insert your SCI paper reference here]
+
+Notes:
+------
+- CSV must contain 'text_id' as index column.
+- Transactional values must be 't' (True) or 'f' (False); these are automatically converted.
+- The network graph is optional; if networkx is not installed, it will be skipped.
+"""
+
+
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
 import matplotlib.pyplot as plt
@@ -144,3 +193,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
