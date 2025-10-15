@@ -25,11 +25,11 @@ filterwarnings('ignore')
 # -------------------
 # Configuration
 class Config:
-    DATA_PATH = r"D:\东西中东北\东部_combined_by_period.xlsx"  # Dataset path
-    SHEET_NAME = "Sheet1"                                     # Sheet name
-    TEXT_COLUMN = "sentence"                                   # Column with text
-    STOPWORDS_PATH = r"D:\文本挖掘\hit_stopwords.txt"          # Stopwords
-    DOMAIN_WORDS_PATH = r"D:\文本挖掘\人文政治.txt"           # Domain-specific words
+    DATA_PATH = r"filepath"  # Dataset path
+    SHEET_NAME = " "                                     # Sheet name
+    TEXT_COLUMN = " "                                   # Column with text
+    STOPWORDS_PATH = r" "          # Stopwords
+    DOMAIN_WORDS_PATH = r" "           # Domain-specific words
     MIN_TOPICS = 5
     MAX_TOPICS = 5
     PASSES = 500
@@ -364,3 +364,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
